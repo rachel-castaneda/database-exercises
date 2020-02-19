@@ -1,4 +1,5 @@
 use codeup_test_db;
+TRUNCATE albums;
 
 INSERT INTO albums (artist, name, release_date, sales, genre)
 values ('michael jackson', 'thriller', '1982', '47.3', 'pop'),
@@ -26,7 +27,7 @@ values ('michael jackson', 'thriller', '1982', '47.3', 'pop'),
  ('the beatles', 'abbey road', '1969', '14.4', 'rock'),
  ('bruce springsteen', 'born in the u.s.a', '1984', '19.6', 'rock'),
  ('dire straits', 'brothers in arms', '1985', '17.7', 'rock'),
- ('james horner', 'titanic: music from the motion picture', '1997', '18.1', 'film score')
+ ('james horner', 'titanic: music from the motion picture', '1997', '18.1', 'film score'),
  ('metallica', 'metallica', '1991', '25.2', 'heavy metal'),
  ('nirvana', 'nevermind', '1991', '16.7', 'grunge'),
  ('pink floyd', 'the wall', '1979', '18.7', 'rock'),
