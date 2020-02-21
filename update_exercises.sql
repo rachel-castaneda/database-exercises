@@ -8,7 +8,7 @@ SELECT name AS 'album names' FROM albums;
 
 #  selects all albums released before 1980
 SELECT name AS 'albums released before 1980' FROM albums WHERE release_date <1980;
-UPDATE albums SET release_date = '1800' WHERE release_date <1980;
+UPDATE albums SET release_date = (CAST(release_date AS SIGNED ) -100) WHERE release_date <1980;
 SELECT name AS 'albums released before 1980' FROM albums WHERE release_date <1980;
 
 # selects all albums from michael jackson
